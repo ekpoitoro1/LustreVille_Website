@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian Learning Academy — Online Tutorials for Every Time Zone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+gt<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site">
+  <div class="nav-row">
+    <a href="#" class="brand" onclick="showPage('home');return false;">
+      <span class="brand-mark"></span>
+      Meridian Learning Academy
+    </a>
+    <button class="burger" onclick="document.querySelector('nav.primary').classList.toggle('open')" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary">
+      <button data-page="home" onclick="showPage('home')">Home</button>
+      <button data-page="subjects" onclick="showPage('subjects')">Subjects</button>
+      <button data-page="teachers" onclick="showPage('teachers')">Our Tutors</button>
+      <button data-page="blog" onclick="showPage('blog')">Blog</button>
+      <button data-page="enquiry" onclick="showPage('enquiry')">Enquiry</button>
+      <button class="nav-cta" data-page="enrol" onclick="showPage('enrol')">Enrol Now</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HOME PAGE ============ -->
+<main id="home" class="page active">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--gold-400);">Online tutorials · Class 1 and up · Every time zone</span>
+        <h1>Where curiosity crosses every time zone.</h1>
+        <p class="lede">Meridian Learning Academy connects pupils and guardians anywhere in the world with qualified tutors for English, Mathematics, French, IT, Data Science and more — one-to-one or in small groups, live online.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-gold" onclick="showPage('enrol');return false;">Enrol a pupil</a>
+          <a href="#" class="btn btn-ghost-light" onclick="showPage('enquiry');return false;">Send an enquiry</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>40+</b><span>countries reached</span></div>
+          <div><b>6</b><span>core subjects</span></div>
+          <div><b>1:1 &amp; group</b><span>class formats</span></div>
+          <div><b>24 hrs</b><span>enquiry response time</span></div>
+        </div>
+      </div>
+      <div class="globe-wrap" aria-hidden="true">
+        <svg class="globe-svg" viewBox="0 0 400 400">
+          <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+          <ellipse class="globe-orbit-line" cx="200" cy="200" rx="150" ry="55"/>
+          <ellipse class="globe-orbit-line" cx="200" cy="200" rx="150" ry="95"/>
+          <ellipse class="globe-orbit-line" cx="200" cy="200" rx="60" ry="150"/>
+          <ellipse class="globe-orbit-line" cx="200" cy="200" rx="105" ry="150"/>
+          <line x1="50" y1="200" x2="350" y2="200" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+          <line x1="200" y1="50" x2="200" y2="350" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <!-- connection nodes representing pupils/tutors worldwide -->
+          <g>
+            <circle class="globe-dot" cx="130" cy="120" r="4"/>
+            <circle class="globe-pulse beat" cx="130" cy="120" r="4" style="animation-delay:0s"/>
+            <circle class="globe-dot" cx="280" cy="150" r="4"/>
+            <circle class="globe-pulse beat" cx="280" cy="150" r="4" style="animation-delay:.6s"/>
+            <circle class="globe-dot" cx="230" cy="290" r="4"/>
+            <circle class="globe-pulse beat" cx="230" cy="290" r="4" style="animation-delay:1.2s"/>
+            <circle class="globe-dot" cx="110" cy="260" r="4"/>
+            <circle class="globe-pulse beat" cx="110" cy="260" r="4" style="animation-delay:1.8s"/>
+            <circle class="globe-dot" cx="200" cy="200" r="5"/>
+            <line x1="200" y1="200" x2="130" y2="120" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
+            <line x1="200" y1="200" x2="280" y2="150" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
+            <line x1="200" y1="200" x2="230" y2="290" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
+            <line x1="200" y1="200" x2="110" y2="260" stroke="rgba(212,175,55,0.4)" stroke-width="1"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow" style="justify-content:center;">What we teach</span>
+      <h2>One academy, every core subject.</h2>
+      <p>Structured curricula for pupils from Class 1 (age 5–6) through senior secondary, taught live by vetted tutors.</p>
+    </div>
+    <div class="subject-grid">
+      <div class="subject-card"><div class="subject-icon">En</div><h3>English</h3><p>Reading, writing, grammar and comprehension, from phonics to essay writing.</p><div class="subject-levels">CLASS 1 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">Ma</div><h3>Mathematics</h3><p>Arithmetic through calculus, with exam-board aligned problem solving.</p><div class="subject-levels">CLASS 1 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">Fr</div><h3>French</h3><p>Conversational fluency and grammar for beginners through advanced learners.</p><div class="subject-levels">CLASS 3 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">IT</div><h3>Information Technology</h3><p>Digital literacy, office tools, internet safety and computing fundamentals.</p><div class="subject-levels">CLASS 4 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">Sc</div><h3>Science</h3><p>Integrated science through separate Biology, Chemistry and Physics at senior level.</p><div class="subject-levels">CLASS 1 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">DS</div><h3>Data Science</h3><p>Statistics, spreadsheets, Python and data storytelling for teens.</p><div class="subject-levels">CLASS 8 – 12</div></div>
+    </div>
+    <div style="text-align:center;margin-top:34px;">
+      <a href="#" class="btn btn-outline" onclick="showPage('subjects');return false;">See all subjects &amp; levels</a>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head center">
+        <span class="eyebrow" style="justify-content:center;color:var(--gold-400);">How enrolment works</span>
+        <h2>From enquiry to first class in four steps.</h2>
+      </div>
+      <div class="how-grid">
+        <div class="how-step"><div class="num">01</div><h4>Send an enquiry</h4><p>Tell us the pupil's age, subject and timezone. We reply within 24 hours.</p></div>
+        <div class="how-step"><div class="num">02</div><h4>Meet your tutor</h4><p>We match a qualified tutor and arrange a free introductory call.</p></div>
+        <div class="how-step"><div class="num">03</div><h4>Enrol &amp; schedule</h4><p>Confirm subjects and a weekly slot that fits your family's day.</p></div>
+        <div class="how-step"><div class="num">04</div><h4>Start learning</h4><p>Join live online lessons with progress updates for guardians.</p></div>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="#" class="btn btn-gold" onclick="showPage('enrol');return false;">Start with enrolment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow" style="justify-content:center;">Why families choose us</span>
+      <h2>Built for a global, busy household.</h2>
+    </div>
+    <div class="why-grid" style="color:var(--ink);">
+      <div class="why-item"><h4 style="color:var(--navy-950);">Any time zone, real scheduling</h4><p style="color:var(--ink-soft);">Lessons booked around your local time, not ours — tutors cover every region.</p></div>
+      <div class="why-item"><h4 style="color:var(--navy-950);">Vetted, qualified tutors</h4><p style="color:var(--ink-soft);">Every tutor is interviewed, credential-checked and subject-tested before teaching.</p></div>
+      <div class="why-item"><h4 style="color:var(--navy-950);">Guardian visibility</h4><p style="color:var(--ink-soft);">Progress notes and attendance sent after every lesson, so you're never in the dark.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow" style="justify-content:center;">Families say</span>
+      <h2>Trusted by guardians worldwide.</h2>
+    </div>
+    <div class="testi-row">
+      <div class="testi"><p class="quote">"My son's Mathematics grades moved up two full levels in a single term. The tutor explains things patiently."</p><span class="who">— Guardian, Lagos, Nigeria</span></div>
+      <div class="testi"><p class="quote">"Booking around our timezone in Toronto was never a problem. Communication is fast and clear."</p><span class="who">— Guardian, Toronto, Canada</span></div>
+      <div class="testi"><p class="quote">"My daughter went from nervous about French to holding full conversations in eight months."</p><span class="who">— Guardian, Manila, Philippines</span></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="cta-strip">
+      <div>
+        <h3>Ready to begin?</h3>
+        <p>Send a quick enquiry and we'll match a tutor within one working day.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="#" class="btn" style="background:var(--navy-950);color:#fff;" onclick="showPage('enquiry');return false;">Send Enquiry</a>
+        <a href="#" class="btn" style="background:#fff;color:var(--navy-950);" onclick="showPage('enrol');return false;">Enrol Now</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ SUBJECTS PAGE ============ -->
+<section id="subjects" class="page">
+  <div class="wrap" style="padding-top:56px;">
+    <div class="sec-head">
+      <span class="eyebrow">Curriculum</span>
+      <h2>Subjects &amp; levels</h2>
+      <p>All subjects follow a structured, level-based curriculum from Class 1 (roughly age 5–6) through senior secondary, adapted to whichever national curriculum the pupil follows at school.</p>
+    </div>
+    <div class="subject-grid">
+      <div class="subject-card"><div class="subject-icon">En</div><h3>English Language &amp; Literature</h3><p>Phonics, grammar, comprehension, creative writing and set-text literature analysis.</p><div class="subject-levels">CLASS 1 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">Ma</div><h3>Mathematics</h3><p>Numeracy foundations through algebra, geometry, trigonometry and calculus.</p><div class="subject-levels">CLASS 1 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">Fr</div><h3>French</h3><p>Speaking, listening, reading and writing, mapped to CEFR levels A1 through B2.</p><div class="subject-levels">CLASS 3 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">IT</div><h3>Information Technology</h3><p>Typing, office software, internet safety, and an introduction to computing logic.</p><div class="subject-levels">CLASS 4 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">Sc</div><h3>General Science</h3><p>Integrated science through Class 8, then separate Biology, Chemistry and Physics.</p><div class="subject-levels">CLASS 1 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">DS</div><h3>Data Science</h3><p>Spreadsheets and statistics first, then Python, data visualisation and basic machine learning.</p><div class="subject-levels">CLASS 8 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">Cd</div><h3>Coding &amp; Computer Programming</h3><p>Block-based coding for younger pupils, moving into Python and web basics for teens.</p><div class="subject-levels">CLASS 3 – 12</div></div>
+      <div class="subject-card"><div class="subject-icon">PS</div><h3>Public Speaking &amp; Study Skills</h3><p>Confidence, presentation and exam-preparation skills that support every other subject.</p><div class="subject-levels">CLASS 4 – 12</div></div>
+    </div>
+
+    <div class="cta-strip" style="margin-top:56px;">
+      <div>
+        <h3>Not sure which level fits?</h3>
+        <p>Send an enquiry with the pupil's current class and we'll recommend a starting level.</p>
+      </div>
+      <a href="#" class="btn" style="background:var(--navy-950);color:#fff;" onclick="showPage('enquiry');return false;">Ask about levels</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEACHER PORTFOLIO PAGE ============ -->
+<section id="teachers" class="page">
+  <div class="wrap" style="padding-top:56px;">
+    <div class="sec-head">
+      <span class="eyebrow">Meet the tutors</span>
+      <h2>Qualified tutors, teaching across every time zone</h2>
+      <p>Every tutor is interviewed, credential-verified and subject-tested before joining Meridian, and completes an ongoing review each term.</p>
+    </div>
+    <div class="teacher-grid">
+
+      <div class="teacher-card">
+        <div class="teacher-photo" style="background:linear-gradient(135deg,#1e4d8c,#0f2a4a);">AO</div>
+        <div class="teacher-body">
+          <h3>Amaka Obi</h3>
+          <span class="teacher-role">Mathematics &amp; Data Science</span>
+          <p>B.Sc. Mathematics, 7 years teaching experience. Specialises in exam preparation and making statistics intuitive for teens.</p>
+          <div class="teacher-tags"><span class="tag">Class 4–12</span><span class="tag">Exam prep</span></div>
+          <div class="teacher-meta"><span>West Africa Time</span><span>★ 4.9 (112 reviews)</span></div>
+        </div>
+      </div>
+
+      <div class="teacher-card">
+        <div class="teacher-photo" style="background:linear-gradient(135deg,#d4af37,#b8860b);color:#0f2a4a;">JM</div>
+        <div class="teacher-body">
+          <h3>James Mercer</h3>
+          <span class="teacher-role">English Language &amp; Literature</span>
+          <p>PGCE English, 10 years in secondary classrooms. Focuses on building confident writers from Class 1 reading groups to A-level essays.</p>
+          <div class="teacher-tags"><span class="tag">Class 1–12</span><span class="tag">Creative writing</span></div>
+          <div class="teacher-meta"><span>GMT / UK</span><span>★ 4.8 (96 reviews)</span></div>
+        </div>
+      </div>
+
+      <div class="teacher-card">
+        <div class="teacher-photo" style="background:linear-gradient(135deg,#2f6bb3,#163a63);">CL</div>
+        <div class="teacher-body">
+          <h3>Camille Lefevre</h3>
+          <span class="teacher-role">French</span>
+          <p>DALF C2, certified FLE instructor. Native French speaker who builds conversational fluency through storytelling and games.</p>
+          <div class="teacher-tags"><span class="tag">Class 3–12</span><span class="tag">Conversational</span></div>
+          <div class="teacher-meta"><span>Central European Time</span><span>★ 5.0 (74 reviews)</span></div>
+        </div>
+      </div>
+
+      <div class="teacher-card">
+        <div class="teacher-photo" style="background:linear-gradient(135deg,#0f2a4a,#2f6bb3);">RS</div>
+        <div class="teacher-body">
+          <h3>Ravi Shankar</h3>
+          <span class="teacher-role">IT &amp; Computer Programming</span>
+          <p>B.Tech Computer Science, 6 years teaching coding to children. Makes programming approachable with project-based lessons.</p>
+          <div class="teacher-tags"><span class="tag">Class 4–12</span><span class="tag">Python &amp; coding</span></div>
+          <div class="teacher-meta"><span>India Standard Time</span><span>★ 4.9 (88 reviews)</span></div>
+        </div>
+      </div>
+
+      <div class="teacher-card">
+        <div class="teacher-photo" style="background:linear-gradient(135deg,#b8860b,#d4af37);color:#0f2a4a;">HT</div>
+        <div class="teacher-body">
+          <h3>Hana Takahashi</h3>
+          <span class="teacher-role">Science &amp; Mathematics</span>
+          <p>M.Sc. Physics, 5 years tutoring experience. Enjoys turning abstract science concepts into hands-on demonstrations online.</p>
+          <div class="teacher-tags"><span class="tag">Class 1–10</span><span class="tag">Science</span></div>
+          <div class="teacher-meta"><span>Japan Standard Time</span><span>★ 4.7 (63 reviews)</span></div>
+        </div>
+      </div>
+
+      <div class="teacher-card">
+        <div class="teacher-photo" style="background:linear-gradient(135deg,#163a63,#1e4d8c);">DK</div>
+        <div class="teacher-body">
+          <h3>Daniela Konig</h3>
+          <span class="teacher-role">Data Science &amp; Mathematics</span>
+          <p>M.Sc. Data Science, former analyst. Introduces teens to statistics and Python through real, relatable datasets.</p>
+          <div class="teacher-tags"><span class="tag">Class 8–12</span><span class="tag">Python &amp; stats</span></div>
+          <div class="teacher-meta"><span>Eastern Time</span><span>★ 4.9 (51 reviews)</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-strip" style="margin-top:56px;">
+      <div>
+        <h3>Want to teach with Meridian?</h3>
+        <p>We're always looking for qualified tutors across subjects and time zones.</p>
+      </div>
+      <a href="#" class="btn" style="background:var(--navy-950);color:#fff;" onclick="showPage('enquiry');return false;">Apply to teach</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG PAGE ============ -->
+<section id="blog" class="page">
+  <div class="wrap" style="padding-top:56px;">
+    <div class="sec-head">
+      <span class="eyebrow">Academy blog</span>
+      <h2>Notes for guardians &amp; pupils</h2>
+      <p>Study tips, subject guidance and updates from the Meridian tutoring community.</p>
+    </div>
+    <div class="blog-grid">
+
+      <article class="blog-card">
+        <div class="blog-cover"><div class="stripe" style="background:linear-gradient(135deg,#1e4d8c,#0f2a4a);"></div><span class="blog-cat">Mathematics</span></div>
+        <div class="blog-content">
+          <span class="blog-date">12 August 2026</span>
+          <h3>Five ways to help your child master times tables</h3>
+          <p>Simple, low-pressure habits guardians can build into weekday evenings to make multiplication stick.</p>
+          <a href="#" class="read-more">Read the full post →</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-cover"><div class="stripe" style="background:linear-gradient(135deg,#d4af37,#b8860b);"></div><span class="blog-cat">French</span></div>
+        <div class="blog-content">
+          <span class="blog-date">28 July 2026</span>
+          <h3>Why starting French early builds lifelong confidence</h3>
+          <p>How younger learners pick up pronunciation and rhythm more naturally than older students.</p>
+          <a href="#" class="read-more">Read the full post →</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-cover"><div class="stripe" style="background:linear-gradient(135deg,#2f6bb3,#163a63);"></div><span class="blog-cat">Data Science</span></div>
+        <div class="blog-content">
+          <span class="blog-date">14 July 2026</span>
+          <h3>Getting started with data science: a roadmap for teens</h3>
+          <p>A gentle route from spreadsheets to Python, and why statistics is the right place to begin.</p>
+          <a href="#" class="read-more">Read the full post →</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-cover"><div class="stripe" style="background:linear-gradient(135deg,#0f2a4a,#2f6bb3);"></div><span class="blog-cat">Parenting</span></div>
+        <div class="blog-content">
+          <span class="blog-date">30 June 2026</span>
+          <h3>How online tutoring bridges time zones for global families</h3>
+          <p>What to expect when your tutor is on the other side of the world, and how scheduling actually works.</p>
+          <a href="#" class="read-more">Read the full post →</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-cover"><div class="stripe" style="background:linear-gradient(135deg,#b8860b,#d4af37);"></div><span class="blog-cat">English</span></div>
+        <div class="blog-content">
+          <span class="blog-date">9 June 2026</span>
+          <h3>Turning reluctant readers into confident ones</h3>
+          <p>Practical techniques tutors use in the first month to build reading habits that last.</p>
+          <a href="#" class="read-more">Read the full post →</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-cover"><div class="stripe" style="background:linear-gradient(135deg,#163a63,#1e4d8c);"></div><span class="blog-cat">IT</span></div>
+        <div class="blog-content">
+          <span class="blog-date">22 May 2026</span>
+          <h3>Internet safety basics every pupil should know</h3>
+          <p>What we cover in the first IT lesson, in plain language guardians can reinforce at home.</p>
+          <a href="#" class="read-more">Read the full post →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENQUIRY PAGE ============ -->
+<section id="enquiry" class="page">
+  <div class="wrap" style="padding-top:56px;">
+    <div class="sec-head">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Send an enquiry</h2>
+      <p>Tell us a little about the pupil and what you're looking for. We reply to every enquiry within 24 hours, wherever you are in the world.</p>
+    </div>
+
+    <div class="form-shell">
+      <div class="info-card">
+        <h3>Other ways to reach us</h3>
+        <p>Prefer to talk directly? Use the channel that suits your time zone.</p>
+        <div class="info-line"><span class="ic">@</span><div><b style="color:#fff;">Email</b><br>enquiries@meridianlearning.academy</div></div>
+        <div class="info-line"><span class="ic">☎</span><div><b style="color:#fff;">WhatsApp / Phone</b><br>+1 (000) 000‑0000 (24hr voicemail)</div></div>
+        <div class="info-line"><span class="ic">⏱</span><div><b style="color:#fff;">Response time</b><br>Within 24 hours, any timezone</div></div>
+        <div class="info-line"><span class="ic">💬</span><div><b style="color:#fff;">Live chat</b><br>Use the gold chat button in the corner of any page</div></div>
+        <div class="divider-gold" style="margin-top:26px;"></div>
+        <p style="font-size:.85rem;">Guardians, pupils, and tutors applying to teach are all welcome to enquire here.</p>
+      </div>
+
+      <form id="enquiryForm" onsubmit="return handleFormSubmit(event,'enquirySuccess')">
+        <div class="form-row">
+          <div class="field"><label for="eq-name">Your name</label><input id="eq-name" required placeholder="Full name"></div>
+          <div class="field"><label for="eq-relation">You are the</label>
+            <select id="eq-relation">
+              <option>Guardian / Parent</option>
+              <option>Pupil (18+)</option>
+              <option>Prospective tutor</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="eq-email">Email address</label><input id="eq-email" type="email" required placeholder="you@example.com"></div>
+          <div class="field"><label for="eq-country">Country / Time zone</label><input id="eq-country" required placeholder="e.g. Nigeria, WAT"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="eq-subject">Subject of interest</label>
+            <select id="eq-subject">
+              <option>English</option><option>Mathematics</option><option>French</option>
+              <option>Information Technology</option><option>Science</option><option>Data Science</option>
+              <option>Coding &amp; Programming</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field"><label for="eq-class">Pupil's current class / grade</label><input id="eq-class" placeholder="e.g. Class 4"></div>
+        </div>
+        <div class="field"><label for="eq-message">Your message</label><textarea id="eq-message" required placeholder="Tell us a bit about what you're looking for..."></textarea></div>
+        <div class="checkbox-row"><input type="checkbox" required id="eq-consent"><label for="eq-consent">I agree to be contacted by Meridian Learning Academy about this enquiry.</label></div>
+        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">Send Enquiry</button>
+        <div class="success-msg" id="enquirySuccess">Thank you — your enquiry has been received. A member of our team will respond within 24 hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENROL PAGE ============ -->
+<section id="enrol" class="page">
+  <div class="wrap" style="padding-top:56px;">
+    <div class="sec-head">
+      <span class="eyebrow">Enrolment</span>
+      <h2>Enrol for tutorials</h2>
+      <p>Complete the form below to enrol a pupil. Once submitted, our team will confirm subject availability and share a schedule within 24 hours.</p>
+    </div>
+
+    <div class="steps-mini">
+      <span>1. Enquire</span><span>2. Trial call</span><span>3. Enrol (you are here)</span><span>4. Start learning</span>
+    </div>
+
+    <div class="form-shell">
+      <div class="info-card">
+        <h3>Before you enrol</h3>
+        <p>Enrolment is open to pupils from Class 1 through senior secondary, in any country.</p>
+        <div class="info-line"><span class="ic">1</span><div><b style="color:#fff;">Pick one or more subjects</b><br>Bundle discounts apply for 2+ subjects.</div></div>
+        <div class="info-line"><span class="ic">2</span><div><b style="color:#fff;">Share your time zone</b><br>We schedule lessons around your local day, not ours.</div></div>
+        <div class="info-line"><span class="ic">3</span><div><b style="color:#fff;">Free introductory call</b><br>Meet your matched tutor before your first paid lesson.</div></div>
+        <div class="divider-gold" style="margin-top:26px;"></div>
+        <p style="font-size:.85rem;">Questions first? <a href="#" style="color:var(--gold-400);text-decoration:underline;" onclick="showPage('enquiry');return false;">Send an enquiry instead</a>.</p>
+      </div>
+
+      <form id="enrolForm" onsubmit="return handleFormSubmit(event,'enrolSuccess')">
+        <div class="form-row">
+          <div class="field"><label for="en-pupil">Pupil's full name</label><input id="en-pupil" required placeholder="Pupil's name"></div>
+          <div class="field"><label for="en-class">Pupil's class / grade</label><input id="en-class" required placeholder="e.g. Class 6"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="en-guardian">Guardian's name</label><input id="en-guardian" placeholder="If pupil is under 18"></div>
+          <div class="field"><label for="en-email">Contact email</label><input id="en-email" type="email" required placeholder="you@example.com"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="en-phone">Phone / WhatsApp</label><input id="en-phone" required placeholder="+ country code and number"></div>
+          <div class="field"><label for="en-country">Country &amp; time zone</label><input id="en-country" required placeholder="e.g. Philippines, PST"></div>
+        </div>
+        <div class="field"><label for="en-subjects">Subject(s) to enrol in</label>
+          <select id="en-subjects" multiple size="6" style="height:auto;">
+            <option>English</option><option>Mathematics</option><option>French</option>
+            <option>Information Technology</option><option>Science</option><option>Data Science</option>
+            <option>Coding &amp; Programming</option><option>Public Speaking &amp; Study Skills</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="en-format">Class format</label>
+            <select id="en-format"><option>One-to-one</option><option>Small group (2–4 pupils)</option><option>Not sure — advise me</option></select>
+          </div>
+          <div class="field"><label for="en-schedule">Preferred days / times</label><input id="en-schedule" placeholder="e.g. Weekday evenings"></div>
+        </div>
+        <div class="field"><label for="en-notes">Anything else we should know?</label><textarea id="en-notes" placeholder="Learning goals, prior experience, exam boards, etc."></textarea></div>
+        <div class="checkbox-row"><input type="checkbox" required id="en-consent"><label for="en-consent">I confirm the details above are correct and agree to be contacted to complete enrolment.</label></div>
+        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">Submit Enrolment</button>
+        <div class="success-msg" id="enrolSuccess">Thank you — your enrolment request has been received. We'll confirm tutor matching and scheduling within 24 hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <a href="#" class="brand" onclick="showPage('home');return false;">
+        <span class="brand-mark"></span>Meridian Learning Academy
+      </a>
+      <p>Live online tutorials for pupils from Class 1, connecting families and qualified tutors across every time zone.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><button onclick="showPage('home')">Home</button></li>
+        <li><button onclick="showPage('subjects')">Subjects</button></li>
+        <li><button onclick="showPage('teachers')">Our Tutors</button></li>
+        <li><button onclick="showPage('blog')">Blog</button></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><button onclick="showPage('enquiry')">Send an Enquiry</button></li>
+        <li><button onclick="showPage('enrol')">Enrol Now</button></li>
+        <li><button onclick="document.getElementById('chatLauncher').click()">Chat with us</button></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>enquiries@meridianlearning.academy<br>+1 (000) 000‑0000<br>Replies within 24 hours, any time zone.</p>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Meridian Learning Academy. All rights reserved.</span>
+    <span>Designed for a global classroom.</span>
+  </div>
+</footer>
+
+<!-- ============ CHAT WIDGET ============ -->
+<button class="chat-launcher" id="chatLauncher" onclick="toggleChat()" aria-label="Open chat">
+  💬<span class="dot"></span>
+</button>
+
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head">
+    <div class="avatar"></div>
+    <div><b>Meridian Assistant</b><span>Online now</span></div>
+    <button class="chat-close" onclick="toggleChat()" aria-label="Close chat">✕</button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="msg bot">Hello! I'm the Meridian Assistant. Ask me about subjects, tutors, pricing, or how to enrol — or tap a quick option below.</div>
+  </div>
+  <div class="quick-replies" id="quickReplies">
+    <button class="qr-btn" onclick="quickAsk('subjects')">Which subjects?</button>
+    <button class="qr-btn" onclick="quickAsk('enrol')">How do I enrol?</button>
+    <button class="qr-btn" onclick="quickAsk('pricing')">Pricing</button>
+    <button class="qr-btn" onclick="quickAsk('human')">Talk to a person</button>
+  </div>
+  <div class="chat-input-row">
+    <input type="text" id="chatInput" placeholder="Type a message..." onkeydown="if(event.key==='Enter')sendChat()">
+    <button class="chat-send" onclick="sendChat()" aria-label="Send">➤</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
